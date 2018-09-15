@@ -1,6 +1,6 @@
 'use strict';
 (function () {
-    var urlMsg = 'http://localhost:3000/json/users.json';
+    var urlMsg = '/json/users.json';
 
     // function timer(block, time) {
     //
@@ -131,7 +131,7 @@
 'use strict';
 (function () {
     if (!localStorage.getItem('auth')) {
-        window.location.href = 'http://localhost:3000/';
+        window.location.href = '/';
     } else {
         window.renderOldMsg();
         var height = window.innerHeight + 'px';
