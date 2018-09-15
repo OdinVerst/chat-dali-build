@@ -16,7 +16,7 @@
             emailserv.forEach(function (item, i) {
                 if(item === getData[0].value){
                     if(getData[1].value === passserv[i]){
-                        window.location.href = '../chat';
+                        window.location.href = '/chat-dali-build/chat';
                         localStorage.setItem('auth', true);
                     }
                 }else {
