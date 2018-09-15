@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Чат</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link href="../css/utils.css" rel="stylesheet">
+    <link href="../css/chat.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<main class="container">
+    <section class="mobile__wrap mobile__wrap-chat">
+        <div class="mobile__content mobile__content-chat">
+            <nav class="chat__nav">
+                <div class="chat__title">Test task</div>
+                <div class="chat__dot-menu">
+                    <ul class="dot-menu">
+                        <li class="dot-menu__item">Clear history</li>
+                        <li class="dot-menu__item">Log out</li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="msg-block__wrap">
+                <div class="time__line" style="visibility: hidden;">TODAY AT </div>
+                <!--<div class="msg-block msg-block_you">-->
+                    <!--<div class="msg-block__content">-->
+                        <!--<div class="msg-block__text">Doing good, how do you feel about grabbing a coffee sometime?</div>-->
+                        <!--<div class="msg-block__time">5 minutes ago</div>-->
+                    <!--</div>-->
+                    <!--<div class="msg-block__ava"></div>-->
+                <!--</div>-->
+                <!--<div class="msg-block msg-block__answer">-->
+                    <!--<div class="msg-block__content">-->
+                        <!--<div class="msg-block__text">Hi Andrea! How are you?</div>-->
+                        <!--<div class="msg-block__time">12 minutes ago</div>-->
+                    <!--</div>-->
+                    <!--<div class="msg-block__ava"></div>-->
+                <!--</div>-->
+            </section>
+            <footer class="send-msg">
+                <div class="send-msg__form">
+                    <label class="send-msg__file-mask">
+                        <input class="send-msg__file" type="file">
+                    </label>
+                    <input class="send-msg__text" type="text" placeholder="Type message...">
+                    <button class="send-msg__btn" type="button"><i></i></button>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <template>
+        <div class="msg-block msg-block_you">
+            <div class="msg-block__content">
+                <div class="msg-block__text">Doing good, how do you feel about grabbing a coffee sometime?</div>
+                <div class="msg-block__time">now</div>
+            </div>
+            <div class="msg-block__ava"></div>
+        </div>
+        <div class="msg-block msg-block__answer">
+            <div class="msg-block__content">
+                <div class="msg-block__text">Hi Andrea! How are you?</div>
+                <div class="msg-block__time">12 minutes ago</div>
+            </div>
+            <div class="msg-block__ava"></div>
+        </div>
+    </template>
+</main>
+</body>
+<script src="../js/_userConnect.js"></script>
+<script src="../js/chat_all.js"></script>
+</html>
