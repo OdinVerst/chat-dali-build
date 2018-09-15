@@ -1,7 +1,7 @@
 'use strict';
 (function () {
     var userList = [];
-    var url = '/json/users.json';
+    var url = '/chat-dali-build/json/users.json';
     var successHandler = function (data) {
         userList = data;
         console.log(userList);

@@ -1,6 +1,6 @@
 'use strict';
 (function () {
-    var urlMsg = '/json/users.json';
+    var urlMsg = '/chat-dali-build/json/users.json';
 
     // function timer(block, time) {
     //
@@ -131,7 +131,7 @@
 'use strict';
 (function () {
     if (!localStorage.getItem('auth')) {
-        window.location.href = '/';
+        window.location.href = '/chat-dali-build/';
     } else {
         window.renderOldMsg();
         var height = window.innerHeight + 'px';
