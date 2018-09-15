@@ -2,6 +2,9 @@
 (function () {
     var userList = [];
     var url = '/chat-dali-build/json/users.json';
+    if(localStorage.getItem('auth')){
+        window.location.href = '/chat-dali-build/chat';
+    }
     var successHandler = function (data) {
         userList = data;
         console.log(userList);
